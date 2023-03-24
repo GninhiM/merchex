@@ -1,4 +1,4 @@
-*/ 
+#Mon gitignore 
 
 env/,
 db.sqlite3
