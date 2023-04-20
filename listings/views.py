@@ -3,6 +3,7 @@ from listings.models import Band, Listing
 
 
 def hello(request):
+    # récupération des données à partir du model Band qui retourne des objets
     bands = Band.objects.all()
     return render(request, 'listings/hello.html', 
                   {'bands': bands})
@@ -10,7 +11,7 @@ def hello(request):
 def about(request):
     return render(request, 'listings/about.html')
 
-def listings(request):
+def listing(request):
     titles = Listing.objects.all()
     return render (request, "listings/listings.html", 
                    {'titles': titles})

@@ -5,8 +5,8 @@
     {% block content %}
         <h1> Mes collections de musiques: </h1>
         <ul>
-            {% for titre in titles   %}
-            <li>{{ titre.title }}</li>
+            {% for annonces in titles   %}
+            <li>{{ annonces.title }}</li>
             {% endfor %}
         </ul>
     {% endblock content%}
