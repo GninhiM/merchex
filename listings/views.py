@@ -11,7 +11,7 @@ def hello(request):
 def about(request):
     return render(request, 'listings/about.html')
 
-def listing(request):
+def listings(request):
     titles = Listing.objects.all()
     return render (request, "listings/listings.html", 
                    {'titles': titles})
